@@ -1,0 +1,21 @@
+{
+  "name": "solana-game-bot",
+  "version": "1.0.0",
+  "description": "Kintara Web3 Browser Automation",
+  "main": "bot.js",
+  "scripts": {
+    "start": "xvfb-run --server-args='-screen 0 1280x1024x24' node kintara-bot.js",
+    "bot": "xvfb-run --server-args='-screen 0 1280x1024x24' node kintara-bot.js",
+    "generate": "node generate-burner.js",
+    "old-bot": "xvfb-run --server-args='-screen 0 1280x1024x24' node bot.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.91.8",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0",
+    "playwright": "^1.44.0",
+    "tweetnacl": "^1.0.3",
+    "ws": "^8.21.0"
+  }
+}
